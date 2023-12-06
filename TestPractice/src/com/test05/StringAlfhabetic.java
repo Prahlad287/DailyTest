@@ -13,33 +13,9 @@ public class StringAlfhabetic {
 		return new String(ch);
 	}
 
-	static int wordCount(String target, String Input) {
-		int count = 0;
-		String[] splitStrings = Input.split("\\s");
-		for (String string : splitStrings) {
-
-			if (string.equals(target)) {
-				count++;
-			}
-		}
-		System.out.println(count);
-		return count;
-	}
-
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter String for alphabatic");
-		// String result=Alphabatic(sc.next());
-		// System.out.println(result);
-
-		String Input = "exploring the narrow alleyways and"
-				+ "hidden corners of the village, often discovering hidden treasures"
-				+ "and forgotten relics. One day, while ambling through the cobblestone streets, "
-				+ "Whiskers stumbled upon a mysterious door tucked away behind a " + "cluster of vibrant flowers the";
-
-		// wordCount(target, Input);
+	static int wordCount(String Input) {
 		int count = 1;
-		String[] splitStrings = Input.split("\\s");
+		String[] splitStrings = Input.split(" ");
 		for (int i = 0; i < splitStrings.length; i++) {
 			if (splitStrings[i] != "") {
 				//System.out.println(splitStrings[i]);
@@ -54,5 +30,22 @@ public class StringAlfhabetic {
 			count = 1;
 			}
 		}
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter String for alphabatic");
+		// String result=Alphabatic(sc.next());
+		// System.out.println(result);
+	//	wordCount( Input);
+
+		String Input = "exploring the narrow alleyways and"
+				+ "hidden corners of the village, often discovering hidden treasures"
+				+ "and forgotten relics. One day, while ambling through the cobblestone streets, "
+				+ "Whiskers stumbled upon a mysterious door tucked away behind a " + "cluster of vibrant flowers the";
+
+		 
+		
 	}
 }
