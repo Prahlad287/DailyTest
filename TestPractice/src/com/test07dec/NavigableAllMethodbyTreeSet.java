@@ -15,6 +15,7 @@ public class NavigableAllMethodbyTreeSet {
 		set.add(5);
 		set.add(2);
 		set.add(6);
+		//print all methods 
 		System.out.println("Print TreeSet Element in Normal Order:"+set);
 		System.out.println("Print TreeSet Element in Reverse Order:"+set.descendingSet());
 		System.out.println("Print 3 Element from 3 :"+set.tailSet(3));
@@ -25,5 +26,4 @@ public class NavigableAllMethodbyTreeSet {
 		System.out.println("PollFirst :"+set.pollFirst());
 		System.out.println("Print after pollFirst :"+set);
 	}
-
 }
